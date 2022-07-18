@@ -1,4 +1,4 @@
-/* Generated on: Mon Jul 18 2022 21:08:34 GMT+0000 (Coordinated Universal Time) */
+/* Generated on: Mon Jul 18 2022 21:33:53 GMT+0000 (Coordinated Universal Time) */
 /* ==========================================================================
    normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css 
    ========================================================================== */
@@ -1264,6 +1264,11 @@ figcaption {
   font-weight: 400;
 }
 
+.number.zero {
+  font-family: Brotedyoungplant, sans-serif;
+  font-weight: 300;
+}
+
 .big-link {
   margin-bottom: 10px;
   font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, serif;
@@ -1334,6 +1339,10 @@ figcaption {
 
 .paragraph-2 {
   margin-bottom: 0px;
+}
+
+.project-title {
+  font-family: Brotedyoungplant, sans-serif;
 }
 
 .project-description {
