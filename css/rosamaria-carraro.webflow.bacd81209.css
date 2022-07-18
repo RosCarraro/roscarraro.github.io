@@ -1,4 +1,4 @@
-/* Generated on: Mon Jul 18 2022 21:35:20 GMT+0000 (Coordinated Universal Time) */
+/* Generated on: Mon Jul 18 2022 23:24:25 GMT+0000 (Coordinated Universal Time) */
 /* ==========================================================================
    normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css 
    ========================================================================== */
@@ -300,6 +300,7 @@ figcaption {
 
 .paragraph.bolder {
   width: 55vw;
+  font-family: 'Brotedyoungplant extraligt', sans-serif;
   color: #fff;
   font-size: 60px;
   line-height: 70px;
@@ -427,6 +428,7 @@ figcaption {
 
 .h2.white {
   margin-bottom: 45px;
+  font-family: Brotedyoungplant, sans-serif;
   color: #fff;
   font-size: 24px;
 }
@@ -1368,6 +1370,26 @@ figcaption {
 
 .image-9 {
   font-family: Roboto, sans-serif;
+}
+
+.heading-7 {
+  font-family: Brotedyoungplant, sans-serif;
+}
+
+.heading-8 {
+  font-family: Brotedyoungplant, sans-serif;
+}
+
+.heading-9 {
+  font-family: Brotedyoungplant, sans-serif;
+}
+
+.heading-10 {
+  font-family: Brotedyoungplant, sans-serif;
+}
+
+.heading-11 {
+  font-family: Brotedyoungplant, sans-serif;
 }
 
 @media screen and (max-width: 991px) {
