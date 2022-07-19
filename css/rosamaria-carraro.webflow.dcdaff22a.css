@@ -1,4 +1,4 @@
-/* Generated on: Tue Jul 19 2022 00:56:10 GMT+0000 (Coordinated Universal Time) */
+/* Generated on: Tue Jul 19 2022 17:57:23 GMT+0000 (Coordinated Universal Time) */
 /* ==========================================================================
    normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css 
    ========================================================================== */
@@ -266,11 +266,11 @@ figcaption {
   position: relative;
   margin-top: 5px;
   margin-bottom: 0px;
-  font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, serif;
+  font-family: Brotedyoungplant, sans-serif;
   color: #000;
   font-size: 14vh;
   line-height: 16vh;
-  font-weight: 400;
+  font-weight: 600;
 }
 
 .main-h1.bold {
