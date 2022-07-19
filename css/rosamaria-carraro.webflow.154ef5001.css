@@ -1,4 +1,4 @@
-/* Generated on: Mon Jul 18 2022 23:24:25 GMT+0000 (Coordinated Universal Time) */
+/* Generated on: Tue Jul 19 2022 00:34:36 GMT+0000 (Coordinated Universal Time) */
 /* ==========================================================================
    normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css 
    ========================================================================== */
@@ -300,7 +300,7 @@ figcaption {
 
 .paragraph.bolder {
   width: 55vw;
-  font-family: 'Brotedyoungplant extraligt', sans-serif;
+  font-family: 'Brotedyoungplant extraligt';
   color: #fff;
   font-size: 60px;
   line-height: 70px;
@@ -643,7 +643,7 @@ figcaption {
 }
 
 .wrapper.about {
-  background-image: url("/images/62d4893119f62c6612e99c41_001.jpg");
+  background-image: url("/images/62d5fafcb4ae5be0f43c0e58_DSCN1693.jpg");
   background-position: 50% 50%;
   background-size: cover;
   background-repeat: no-repeat;
@@ -1174,6 +1174,8 @@ figcaption {
 .signature {
   margin-top: 50px;
   margin-bottom: 100px;
+  font-family: Romantically, sans-serif;
+  font-size: 24px;
 }
 
 .div-block-26 {
@@ -1895,9 +1897,9 @@ figcaption {
   font-display: swap;
 }
 @font-face {
-  font-family: 'Brotedyoungplant extraligt';
+  font-family: 'Brotedyoungplant';
   src: url('/fonts/62d4caea5d3ddb0bab99b067_BrotedYoungplant-ExtraLigt.otf') format('opentype');
-  font-weight: 400;
+  font-weight: 200;
   font-style: normal;
   font-display: swap;
 }
@@ -1919,6 +1921,13 @@ figcaption {
   font-family: 'Brotedyoungplant';
   src: url('/fonts/62d4caeb49ba538a99e86169_BrotedYoungplant-UltraBold.otf') format('opentype');
   font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Romantically';
+  src: url('/fonts/62d5f58e1d090d67e0ba6b9b_Romantically.otf') format('opentype');
+  font-weight: 400;
   font-style: normal;
   font-display: swap;
 }
