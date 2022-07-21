@@ -1,4 +1,4 @@
-/* Generated on: Tue Jul 19 2022 21:00:16 GMT+0000 (Coordinated Universal Time) */
+/* Generated on: Thu Jul 21 2022 23:22:00 GMT+0000 (Coordinated Universal Time) */
 /* ==========================================================================
    normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css 
    ========================================================================== */
@@ -304,6 +304,7 @@ figcaption {
   color: #fff;
   font-size: 60px;
   line-height: 70px;
+  text-shadow: 1px 1px 6px #000;
 }
 
 .column {
@@ -643,7 +644,7 @@ figcaption {
 }
 
 .wrapper.about {
-  background-image: url("/images/62d5fafcb4ae5be0f43c0e58_DSCN1693.jpg");
+  background-image: url("/images/62d9bc3883e23727d30e1a77_world_map.png");
   background-position: 50% 50%;
   background-size: cover;
   background-repeat: no-repeat;
