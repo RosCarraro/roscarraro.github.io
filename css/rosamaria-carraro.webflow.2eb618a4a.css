@@ -1,4 +1,4 @@
-/* Generated on: Sun Jul 24 2022 17:32:32 GMT+0000 (Coordinated Universal Time) */
+/* Generated on: Sun Jul 24 2022 18:40:21 GMT+0000 (Coordinated Universal Time) */
 /* ==========================================================================
    normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css 
    ========================================================================== */
@@ -911,6 +911,7 @@ figcaption {
 }
 
 .tag-button.technique {
+  overflow: auto;
   margin-top: 5px;
   background-color: rgba(51, 51, 51, 0.12);
   color: #000;
@@ -1458,6 +1459,17 @@ figcaption {
 .collection-list-2 {
   max-width: 500px;
   margin-top: 0px;
+}
+
+.empty_state {
+  display: none;
+  background-color: hsla(0, 0%, 86.7%, 0);
+}
+
+.empty-state {
+  display: none;
+  max-height: 5px;
+  background-color: hsla(0, 0%, 86.7%, 0);
 }
 
 @media screen and (max-width: 991px) {
