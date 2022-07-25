@@ -1,4 +1,4 @@
-/* Generated on: Sun Jul 24 2022 18:40:21 GMT+0000 (Coordinated Universal Time) */
+/* Generated on: Mon Jul 25 2022 16:36:05 GMT+0000 (Coordinated Universal Time) */
 /* ==========================================================================
    normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css 
    ========================================================================== */
@@ -299,7 +299,7 @@ figcaption {
 }
 
 .paragraph.bolder {
-  width: 55vw;
+  width: 70vw;
   font-family: Brotedyoungplant, sans-serif;
   color: #fff;
   font-size: 60px;
@@ -521,10 +521,22 @@ figcaption {
 
 .project-info.head {
   left: 0vw;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
   -webkit-box-align: start;
   -webkit-align-items: flex-start;
   -ms-flex-align: start;
   align-items: flex-start;
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 auto;
+  -ms-flex: 0 auto;
+  flex: 0 auto;
 }
 
 .icon-social {
@@ -644,7 +656,7 @@ figcaption {
 }
 
 .wrapper.about {
-  background-image: url("/images/62d9bc3883e23727d30e1a77_world_map.png");
+  background-image: url("/images/62ddbd6085a5c0e1e5a1abbb_world_map.png");
   background-position: 50% 50%;
   background-size: cover;
   background-repeat: no-repeat;
@@ -892,6 +904,7 @@ figcaption {
 }
 
 .tag-button {
+  display: block;
   padding: 5px 15px;
   border-radius: 13px;
   background-color: rgba(0, 128, 0, 0.14);
