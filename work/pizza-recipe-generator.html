@@ -171,20 +171,7 @@
               >.
             </p>
           </div>
-          <script id="1001">
-               (function() {
-                  const xhr = new XMLHttpRequest()
-                  xhr.responseType = \'blob\';
-                  xhr.open(\'GET\', "https://pizza-recipe-generator.herokuapp.com/Pizza_recipe/autoload.js?bokeh-autoload-element=1001&bokeh-app-path=/Pizza_recipe&bokeh-absolute-url=https://pizza-recipe-generator.herokuapp.com/Pizza_recipe", true);
-                  xhr.onload = function (event) {      
-                     const script = document.createElement(\'script\');      
-                  const src = URL.createObjectURL(event.target.response);     
-                  script.src = src;
-                  document.body.appendChild(script);
-                      };
-                  xhr.send();
-               })();
-          </script>
+          
         </div>
       </div>
       <div class="next-project">
