@@ -7895,7 +7895,7 @@ Webflow.define('brand', module.exports = function ($) {
     var publishedDomain = $html.attr("") || '';
 
     if (/\.webflow\.io$/i.test(publishedDomain) && location.hostname !== publishedDomain) {
-      shouldBrand = true;
+      shouldBrand = false;
     }
 
     if (shouldBrand && !isPhantom) {
