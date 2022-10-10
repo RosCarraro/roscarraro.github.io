@@ -2316,6 +2316,18 @@ textarea.w-select {
 /* ==========================================================================
    Start of custom Webflow CSS
    ========================================================================== */
+.w-layout-grid {
+   display: -ms-grid;
+   display: grid;
+   grid-auto-columns: 1fr;
+   -ms-grid-columns: 1fr 1fr;
+   grid-template-columns: 1fr 1fr;
+   -ms-grid-rows: auto auto;
+   grid-template-rows: auto auto;
+   grid-row-gap: 16px;
+   grid-column-gap: 16px;
+}
+
 body {
    font-family: Roboto, sans-serif;
    color: #333;
@@ -2436,6 +2448,7 @@ figcaption {
 .wrapper-title {
    overflow: hidden;
    width: 100%;
+   max-height: 70vh;
    margin-right: 0vw;
    margin-left: 0vw;
    padding-right: 5vw;
@@ -2539,7 +2552,7 @@ figcaption {
    -webkit-box-direction: normal;
    -webkit-flex-direction: column;
    -ms-flex-direction: column;
-   flex-direction: column;
+   flex-direction: column
 }
 
 .vertical-social {
@@ -2949,7 +2962,7 @@ figcaption {
    -webkit-justify-content: center;
    -ms-flex-pack: center;
    justify-content: center;
-   background-image: url("/images/62e049277f3e4473c7a245f3_My%20project-1%20(7).png");
+   background-image: url("/images/My_background.png");
    background-position: 0px 0px;
    background-size: 540px;
    background-clip: border-box;
@@ -2975,7 +2988,7 @@ figcaption {
 }
 
 .wrapper.about {
-   background-image: url("/images/62eaa9119a97c7387249213a_world_map.png");
+   background-image: url("/images/world_map.png");
    background-position: 50% 50%;
    background-size: cover;
    background-repeat: no-repeat;
@@ -3038,7 +3051,7 @@ figcaption {
    display: -ms-flexbox;
    display: flex;
    width: 100vw;
-   min-height: 70vh;
+   min-height: 70px;
    margin-top: 20vh;
    margin-bottom: 150px;
    padding-right: 5vw;
@@ -3052,6 +3065,8 @@ figcaption {
    -webkit-justify-content: flex-end;
    -ms-flex-pack: end;
    justify-content: flex-end;
+   -o-object-fit: fill;
+   object-fit: fill
 }
 
 .wide-background {
@@ -3182,7 +3197,7 @@ figcaption {
 .wrap-content {
    width: 40vw;
    padding-top: 20px;
-   padding-right: 5vw;
+   padding-right: 5vw
 }
 
 .wrap-content.links {
@@ -3475,7 +3490,7 @@ figcaption {
    position: absolute;
    width: 100%;
    height: auto;
-   min-height: 30vh;
+   max-height: 30vh;
    padding: 5vh 5vw 0vh;
    background-color: transparent;
 }
@@ -3765,15 +3780,15 @@ figcaption {
 .heading-12 {
    max-height: 80px;
    max-width: none;
-   font-family: Brotedyoungplant, sans-serif;
+   font-family: Brotedyoungplant, sans-serif
 }
 
 .link-2 {
-   box-shadow: inset 0 -2px 0 0 rgba(0, 128, 0, 0.22);
+   box-shadow: inset 0 -2px 0 0 rgba(0, 128, 0, 0.22)
 }
 
 .butto {
-   margin-top: 13px;
+   margin-top: 13px
 }
 
 .collection-item {
@@ -3786,7 +3801,7 @@ figcaption {
    -ms-grid-rows: auto auto;
    grid-template-rows: auto auto;
    -o-object-fit: contain;
-   object-fit: contain;
+   object-fit: contain
 }
 
 .collection-list {
@@ -3810,22 +3825,22 @@ figcaption {
    max-width: 75%;
    margin-top: 0px;
    -o-object-fit: contain;
-   object-fit: contain;
+   object-fit: contain
 }
 
 .empty_state {
    display: none;
-   background-color: hsla(0, 0%, 86.7%, 0);
+   background-color: hsla(0, 0%, 86.7%, 0)
 }
 
 .empty-state {
    display: none;
    max-height: 5px;
-   background-color: hsla(0, 0%, 86.7%, 0);
+   background-color: hsla(0, 0%, 86.7%, 0)
 }
 
 .empty-state-2 {
-   display: none;
+   display: none
 }
 
 .collection-list-wrapper {
@@ -3840,11 +3855,11 @@ figcaption {
    -webkit-box-align: start;
    -webkit-align-items: flex-start;
    -ms-flex-align: start;
-   align-items: flex-start;
+   align-items: flex-start
 }
 
 .collection-item-2 {
-   margin-bottom: 5px;
+   margin-bottom: 5px
 }
 
 .link-block-4 {
@@ -3864,15 +3879,15 @@ figcaption {
    transition: box-shadow 200ms ease, color 200ms ease;
    text-decoration: none;
    -o-object-fit: contain;
-   object-fit: contain;
+   object-fit: contain
 }
 
 .image-10 {
-   opacity: 0.79;
+   opacity: 0.79
 }
 
 .image-11 {
-   opacity: 0.8;
+   opacity: 0.8
 }
 
 .collection-item-3 {
@@ -3880,35 +3895,63 @@ figcaption {
    object-fit: contain
 }
 
-@media screen and (max-width: 991px) {
+.grid {
+   max-width: 1000px;
+   min-width: 600px;
+   margin: 5vw 10vh 10vw;
+   -webkit-box-align: center;
+   -webkit-align-items: center;
+   -ms-flex-align: center;
+   align-items: center;
+   -ms-grid-row-align: auto;
+   align-self: auto;
+   -webkit-box-ordinal-group: 1;
+   -webkit-order: 0;
+   -ms-flex-order: 0;
+   order: 0;
+   -webkit-box-flex: 0;
+   -webkit-flex: 0 auto;
+   -ms-flex: 0 auto;
+   flex: 0 auto;
+   grid-auto-flow: row;
+   -ms-grid-rows: auto auto;
+   grid-template-rows: auto auto
+}
+
+.image-12 {
+   -o-object-fit: contain;
+   object-fit: contain
+}
+
+@media screen and (max-width:991px) {
    p {
-       -webkit-box-flex: 0;
-       -webkit-flex: 0 auto;
-       -ms-flex: 0 auto;
-       flex: 0 auto;
+      -webkit-box-flex: 0;
+      -webkit-flex: 0 auto;
+      -ms-flex: 0 auto;
+      flex: 0 auto
    }
 
    a {
-      margin-bottom: 20px;
+      margin-bottom: 20px
    }
 
    .hero {
-      padding-left: 0px;
+      padding-left: 0;
       -webkit-box-pack: start;
       -webkit-justify-content: flex-start;
       -ms-flex-pack: start;
-      justify-content: flex-start;
+      justify-content: flex-start
    }
 
    .wrapper-title {
       width: 100vw;
-      max-height: 70vh;
+      max-height: 70vh
    }
 
    .vertical {
       width: 100vw;
       height: 20vh;
-      padding: 0vh 10vw;
+      padding: 0 10vw;
       -webkit-box-orient: horizontal;
       -webkit-box-direction: normal;
       -webkit-flex-direction: row;
@@ -3917,71 +3960,71 @@ figcaption {
       -webkit-box-pack: justify;
       -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
-      justify-content: space-between;
+      justify-content: space-between
    }
 
    .link {
       -webkit-transform: none;
       -ms-transform: none;
-      transform: none;
+      transform: none
    }
 
    .section.main {
       -webkit-box-pack: start;
       -webkit-justify-content: flex-start;
       -ms-flex-pack: start;
-      justify-content: flex-start;
+      justify-content: flex-start
    }
 
    .main-h1 {
       font-size: 84px;
-      line-height: 80px;
+      line-height: 80px
    }
 
    .main-h1.bold {
       font-size: 84px;
-      line-height: 80px;
+      line-height: 80px
    }
 
    .main-h1.bold.home {
-      line-height: 15vh;
+      line-height: 15vh
    }
 
    .main-h1.home {
       font-size: 18vh;
-      line-height: 15vh;
+      line-height: 15vh
    }
 
    .paragraph.bolder {
       width: auto;
-      margin-bottom: 0px;
+      margin-bottom: 0
    }
 
    .column._100vh {
       width: auto;
-      padding-right: 0vw;
-      padding-left: 0vw;
+      padding-right: 0;
+      padding-left: 0
    }
 
    .column.about {
       width: auto;
       padding-right: 10vw;
-      padding-left: 10vw;
+      padding-left: 10vw
    }
 
    .home-subhead {
       width: auto;
-      max-width: 100vh;
+      max-width: 100vh
    }
 
    .project-info {
       width: 100%;
-      padding: 10vh 5vw;
+      padding: 10vh 5vw
    }
 
    .project-info.head {
-      margin-bottom: 0px;
-      padding-left: 0px;
+      margin-bottom: 0;
+      padding-left: 0
    }
 
    .wrapper {
@@ -3989,15 +4032,15 @@ figcaption {
       -webkit-box-direction: reverse;
       -webkit-flex-direction: column-reverse;
       -ms-flex-direction: column-reverse;
-      flex-direction: column-reverse;
+      flex-direction: column-reverse
    }
 
    .wrapper.center.form {
-      padding-left: 70px;
+      padding-left: 70px
    }
 
    ._w-title {
-      margin-bottom: 5vh;
+      margin-bottom: 5vh
    }
 
    .wrapper-list-links {
@@ -4010,28 +4053,28 @@ figcaption {
       -webkit-box-align: start;
       -webkit-align-items: flex-start;
       -ms-flex-align: start;
-      align-items: flex-start;
+      align-items: flex-start
    }
 
    .wrap-content {
-      width: 100%;
+      width: 100%
    }
 
    .div-block-18 {
-      width: auto;
+      width: auto
    }
 
    .brand.w--current {
-      margin-bottom: 0px;
+      margin-bottom: 0
    }
 
    .div-block-26 {
-      width: auto;
+      width: auto
    }
 
    .div-block-27 {
       padding-right: 5vw;
-      padding-left: 5vw;
+      padding-left: 5vw
    }
 
    .nav-menu {
@@ -4039,23 +4082,28 @@ figcaption {
       padding-bottom: 1vh;
       -webkit-flex-wrap: wrap;
       -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+      flex-wrap: wrap
    }
 
    .big-link {
       font-size: 40px;
-      line-height: 40px;
+      line-height: 40px
+   }
+
+   .grid {
+      margin-right: 15vh;
+      margin-left: 10vh
    }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width:767px) {
    .hero.pages {
       padding-left: 40px;
-      text-align: center;
+      text-align: center
    }
 
    .wrapper-title {
-      max-height: 70vh;
+      max-height: 70vh
    }
 
    .vertical-social {
@@ -4070,20 +4118,20 @@ figcaption {
       -webkit-justify-content: space-around;
       -ms-flex-pack: distribute;
       justify-content: space-around;
-      background-color: #fff;
+      background-color: #fff
    }
 
    .main-h1.home {
-      font-size: 12vh;
+      font-size: 12vh
    }
 
    .paragraph.bolder {
-      width: auto;
+      width: auto
    }
 
    .column._100vh {
       width: 100%;
-      min-height: auto;
+      min-height: auto
    }
 
    .column.background-image {
@@ -4091,24 +4139,24 @@ figcaption {
       -webkit-box-flex: 0;
       -webkit-flex: 0 auto;
       -ms-flex: 0 auto;
-      flex: 0 auto;
+      flex: 0 auto
    }
 
    .column.about {
-      width: 100%;
+      width: 100%
    }
 
    .project-info.head {
-      padding-left: 0px;
+      padding-left: 0
    }
 
    .wrapper.center {
       padding-right: 40px;
-      padding-left: 40px;
+      padding-left: 40px
    }
 
    ._w-title {
-      margin-bottom: 5vh;
+      margin-bottom: 5vh
    }
 
    .wrapper-list-links {
@@ -4120,7 +4168,7 @@ figcaption {
       -webkit-box-align: start;
       -webkit-align-items: flex-start;
       -ms-flex-align: start;
-      align-items: flex-start;
+      align-items: flex-start
    }
 
    .div-block-20 {
@@ -4132,7 +4180,7 @@ figcaption {
       -webkit-box-align: center;
       -webkit-align-items: center;
       -ms-flex-align: center;
-      align-items: center;
+      align-items: center
    }
 
    .navbar {
@@ -4152,82 +4200,91 @@ figcaption {
       -webkit-box-align: center;
       -webkit-align-items: center;
       -ms-flex-align: center;
-      align-items: center;
+      align-items: center
    }
 
    .brand {
-      height: auto;
+      height: auto
    }
 
    .brand.w--current {
       height: auto;
-      margin-bottom: 0px;
+      margin-bottom: 0
    }
 
    .nav-menu {
-      padding-top: 0vh;
-      padding-bottom: 0vh;
+      padding-top: 0;
+      padding-bottom: 0
    }
 
    .big-link {
       font-size: 30px;
-      line-height: 30px;
+      line-height: 30px
+   }
+
+   .grid {
+      max-width: none;
+      min-width: 0;
+      margin-right: 5vh;
+      margin-left: 5vh;
+      -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr
    }
 }
 
-@media screen and (max-width: 479px) {
+@media screen and (max-width:479px) {
    h2 {
       font-size: 30px;
-      line-height: 40px;
+      line-height: 40px
    }
 
    .hero {
       padding-right: 40px;
-      padding-left: 40px;
+      padding-left: 40px
    }
 
    .hero.pages {
-      text-align: center;
+      text-align: center
    }
 
    .vertical-social {
       position: relative;
-      left: 0px;
+      left: 0;
       top: auto;
-      right: 0px;
-      bottom: 0px;
+      right: 0;
+      bottom: 0;
       height: 60px;
-      background-color: #fff;
+      background-color: #fff
    }
 
    .main-h1 {
       font-size: 50px;
-      line-height: 50px;
+      line-height: 50px
    }
 
    .main-h1.bold {
       font-size: 60px;
-      line-height: 50px;
+      line-height: 50px
    }
 
    .main-h1.bold.home {
       font-size: 5vh;
-      line-height: 8vh;
+      line-height: 8vh
    }
 
    .main-h1.home {
       font-size: 5vh;
-      line-height: 8vh;
+      line-height: 8vh
    }
 
    .paragraph.bolder {
       width: auto;
       font-size: 30px;
-      line-height: 40px;
+      line-height: 40px
    }
 
    .column._100vh {
-      padding: 60px 40px;
+      padding: 60px 40px
    }
 
    .column.background-image {
@@ -4235,58 +4292,58 @@ figcaption {
       -webkit-box-flex: 0;
       -webkit-flex: 0 auto;
       -ms-flex: 0 auto;
-      flex: 0 auto;
+      flex: 0 auto
    }
 
    .column.about {
-      padding: 60px 40px;
+      padding: 60px 40px
    }
 
    .home-subhead {
-      width: auto;
+      width: auto
    }
 
    .h2 {
       font-size: 30px;
-      line-height: 40px;
+      line-height: 40px
    }
 
    .h2.mail {
-      font-size: 24px;
+      font-size: 24px
    }
 
    .h2.contact {
-      width: auto;
+      width: auto
    }
 
    .project-info {
-      padding: 0px;
+      padding: 0
    }
 
    .project-info.head {
-      margin-bottom: 0px;
-      padding: 50px 40px;
+      margin-bottom: 0;
+      padding: 50px 40px
    }
 
    .wrapper {
       -webkit-box-flex: 0;
       -webkit-flex: 0 0 auto;
       -ms-flex: 0 0 auto;
-      flex: 0 0 auto;
+      flex: 0 0 auto
    }
 
    .wrapper.center {
-      padding-right: 0vw;
-      padding-left: 0vw;
+      padding-right: 0;
+      padding-left: 0
    }
 
    .wrapper.center.form {
       padding-right: 40px;
-      padding-left: 40px;
+      padding-left: 40px
    }
 
    ._w-title {
-      margin-bottom: 5vh;
+      margin-bottom: 5vh
    }
 
    .wrapper-info {
@@ -4294,7 +4351,7 @@ figcaption {
       -webkit-box-direction: normal;
       -webkit-flex-direction: column;
       -ms-flex-direction: column;
-      flex-direction: column;
+      flex-direction: column
    }
 
    .wrapper-info.about {
@@ -4304,7 +4361,7 @@ figcaption {
       -webkit-box-direction: normal;
       -webkit-flex-direction: column;
       -ms-flex-direction: column;
-      flex-direction: column;
+      flex-direction: column
    }
 
    .wrapper-info.contact {
@@ -4312,20 +4369,20 @@ figcaption {
       -webkit-box-direction: normal;
       -webkit-flex-direction: column;
       -ms-flex-direction: column;
-      flex-direction: column;
+      flex-direction: column
    }
 
    .wrap-content {
-      width: auto;
+      width: auto
    }
 
    .div-block-18 {
-      width: auto;
+      width: auto
    }
 
    .container {
       padding-right: 30px;
-      padding-left: 30px;
+      padding-left: 30px
    }
 
    .div-block-24 {
@@ -4333,18 +4390,18 @@ figcaption {
       -webkit-box-direction: normal;
       -webkit-flex-direction: column;
       -ms-flex-direction: column;
-      flex-direction: column;
+      flex-direction: column
    }
 
    .heading-6 {
       margin-bottom: 30px;
       font-size: 16px;
-      line-height: 24px;
+      line-height: 24px
    }
 
    .alt-next {
       font-size: 20px;
-      line-height: 40px;
+      line-height: 40px
    }
 
    .navbar {
@@ -4354,103 +4411,205 @@ figcaption {
       -webkit-flex-direction: column;
       -ms-flex-direction: column;
       flex-direction: column;
-      text-align: center;
+      text-align: center
    }
 
    .brand {
       width: 100%;
       height: 80px;
-      padding-left: 0px;
+      padding-left: 0;
       float: none;
       -webkit-box-pack: center;
       -webkit-justify-content: center;
       -ms-flex-pack: center;
-      justify-content: center;
+      justify-content: center
    }
 
    .brand.w--current {
       height: 80px;
-      padding-left: 0px;
+      padding-left: 0;
       float: none;
       -webkit-box-pack: center;
       -webkit-justify-content: center;
       -ms-flex-pack: center;
-      justify-content: center;
+      justify-content: center
    }
 
    .div-block-27 {
       padding-right: 40px;
-      padding-left: 40px;
+      padding-left: 40px
    }
 
    .nav-menu {
       width: 100%;
-      padding-right: 0px;
-      padding-left: 0px;
+      padding-right: 0;
+      padding-left: 0;
       -webkit-box-pack: justify;
       -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
-      justify-content: space-between;
+      justify-content: space-between
    }
 
    .big-link {
       font-size: 20px;
-      line-height: 20px;
+      line-height: 20px
+   }
+
+   .grid {
+      min-width: 0;
+      -webkit-box-flex: 0;
+      -webkit-flex: 0 auto;
+      -ms-flex: 0 auto;
+      flex: 0 auto;
+      grid-auto-flow: row;
+      grid-template-areas: "."
    }
 }
 
+#w-node-e9aa53d6-9da8-2a17-2558-a9328ae33620-abd293ae {
+   -ms-grid-column: span 1;
+   grid-column-start: span 1;
+   -ms-grid-column-span: 1;
+   grid-column-end: span 1;
+   -ms-grid-row: span 1;
+   grid-row-start: span 1;
+   -ms-grid-row-span: 1;
+   grid-row-end: span 1
+}
+
+#w-node-e9aa53d6-9da8-2a17-2558-a9328ae33622-abd293ae {
+   -ms-grid-column: span 1;
+   grid-column-start: span 1;
+   -ms-grid-column-span: 1;
+   grid-column-end: span 1;
+   -ms-grid-row: span 1;
+   grid-row-start: span 1;
+   -ms-grid-row-span: 1;
+   grid-row-end: span 1
+}
+
+#w-node-e9aa53d6-9da8-2a17-2558-a9328ae33623-abd293ae {
+   -ms-grid-column: span 1;
+   grid-column-start: span 1;
+   -ms-grid-column-span: 1;
+   grid-column-end: span 1;
+   -ms-grid-row: span 1;
+   grid-row-start: span 1;
+   -ms-grid-row-span: 1;
+   grid-row-end: span 1
+}
+
+#w-node-e9aa53d6-9da8-2a17-2558-a9328ae33624-abd293ae {
+   -ms-grid-column: span 1;
+   grid-column-start: span 1;
+   -ms-grid-column-span: 1;
+   grid-column-end: span 1;
+   -ms-grid-row: span 1;
+   grid-row-start: span 1;
+   -ms-grid-row-span: 1;
+   grid-row-end: span 1
+}
+
+#w-node-e9aa53d6-9da8-2a17-2558-a9328ae33625-abd293ae {
+   -ms-grid-column: span 1;
+   grid-column-start: span 1;
+   -ms-grid-column-span: 1;
+   grid-column-end: span 1;
+   -ms-grid-row: span 1;
+   grid-row-start: span 1;
+   -ms-grid-row-span: 1;
+   grid-row-end: span 1
+}
+
+#w-node-e9aa53d6-9da8-2a17-2558-a9328ae33626-abd293ae {
+   -ms-grid-column: span 1;
+   grid-column-start: span 1;
+   -ms-grid-column-span: 1;
+   grid-column-end: span 1;
+   -ms-grid-row: span 1;
+   grid-row-start: span 1;
+   -ms-grid-row-span: 1;
+   grid-row-end: span 1
+}
+
+#w-node-e9aa53d6-9da8-2a17-2558-a9328ae33627-abd293ae {
+   -ms-grid-column: span 1;
+   grid-column-start: span 1;
+   -ms-grid-column-span: 1;
+   grid-column-end: span 1;
+   -ms-grid-row: span 1;
+   grid-row-start: span 1;
+   -ms-grid-row-span: 1;
+   grid-row-end: span 1
+}
+
+#w-node-e9aa53d6-9da8-2a17-2558-a9328ae33628-abd293ae {
+   -ms-grid-column: span 1;
+   grid-column-start: span 1;
+   -ms-grid-column-span: 1;
+   grid-column-end: span 1;
+   -ms-grid-row: span 1;
+   grid-row-start: span 1;
+   -ms-grid-row-span: 1;
+   grid-row-end: span 1
+}
+
 @font-face {
    font-family: 'Brotedyoungplant';
-   src: url('/fonts/62d4caea074c2e74bb42772d_BrotedYoungplant-Black.otf') format('opentype');
+   src: url(/fonts/BrotedYoungplant-Black.otf) format('opentype');
    font-weight: 900;
    font-style: normal;
-   font-display: swap;
+   font-display: swap
 }
 
 @font-face {
    font-family: 'Brotedyoungplant';
-   src: url('/fonts/62d4caeacc6dd8d53bc3e395_BrotedYoungplant-DemiBold.otf') format('opentype'), url('/fonts/62d4caeb49ba53d1cce86168_BrotedYoungplant-SemiBold.otf') format('opentype');
+   src: url(/fonts/BrotedYoungplant-DemiBold.otf) format('opentype'), url(/fonts/BrotedYoungplant-SemiBold.otf) format('opentype');
    font-weight: 600;
    font-style: normal;
-   font-display: swap;
+   font-display: swap
 }
 
 @font-face {
    font-family: 'Brotedyoungplant';
-   src: url('/fonts/62d4caea5d3ddb0bab99b067_BrotedYoungplant-ExtraLigt.otf') format('opentype');
+   src: url(/fonts/BrotedYoungplant-ExtraLigt.otf) format('opentype');
    font-weight: 200;
    font-style: normal;
-   font-display: swap;
+   font-display: swap
 }
 
 @font-face {
    font-family: 'Brotedyoungplant';
-   src: url('/fonts/62d4caea074c2ecea4427732_BrotedYoungplant-Light.otf') format('opentype');
+   src: url(/fonts/BrotedYoungplant-Light.otf) format('opentype');
    font-weight: 300;
    font-style: normal;
-   font-display: swap;
+   font-display: swap
 }
 
 @font-face {
    font-family: 'Brotedyoungplant';
-   src: url('/fonts/62d4caebcc6dd88576c3e396_BrotedYoungplant-Thin.otf') format('opentype');
+   src: url(/fonts/BrotedYoungplant-Thin.otf) format('opentype');
    font-weight: 100;
    font-style: normal;
-   font-display: swap;
+   font-display: swap
 }
 
 @font-face {
    font-family: 'Brotedyoungplant';
-   src: url('/fonts/62d4caeb49ba538a99e86169_BrotedYoungplant-UltraBold.otf') format('opentype');
+   src: url(/fonts/BrotedYoungplant-UltraBold.otf) format('opentype');
    font-weight: 700;
    font-style: normal;
-   font-display: swap;
+   font-display: swap
 }
 
 @font-face {
    font-family: 'Romantically';
-   src: url('/fonts/62d5f58e1d090d67e0ba6b9b_Romantically.otf') format('opentype');
+   src: url(/fonts/Romantically.otf) format('opentype');
    font-weight: 400;
    font-style: normal;
-   font-display: swap;
+   font-display: swap
+}
+
+.kux-dbdz-uoz {
+   display: none !important;
 }
