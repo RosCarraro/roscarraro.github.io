@@ -2445,6 +2445,16 @@ figcaption {
    justify-content: center;
 }
 
+.demo-bg {
+   opacity: 0.6;
+   position: absolute;
+   left: 0;
+   top: 50%;
+   width: 100%;
+   height: auto;
+   transform: translate(0, -50%);
+ }
+
 .wrapper-title {
    overflow: hidden;
    width: 100%;
@@ -3531,7 +3541,7 @@ figcaption {
    -webkit-transition: color 200ms ease, box-shadow 200ms ease;
    transition: color 200ms ease, box-shadow 200ms ease;
    font-family: Roboto, sans-serif;
-   color: grey;
+   color: #333;
    font-size: 16px;
    font-weight: 400;
 }
@@ -3725,6 +3735,12 @@ figcaption {
 
 .paragraph-2 {
    margin-bottom: 0px;
+}
+
+.paragraph-3 {
+   color: #333;
+   font-weight: 400;
+   backdrop-filter: blur(3px);
 }
 
 .project-title {
