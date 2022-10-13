@@ -2445,14 +2445,13 @@ figcaption {
    justify-content: center;
 }
 
-.demo-bg {
+.hero-bg {
    opacity: 0.6;
    position: absolute;
-   left: 0;
+   left: 50%;
    top: 50%;
-   width: 100%;
-   height: auto;
-   transform: translate(0, -50%);
+   min-height: 100%;
+   transform: translate(-50%, -50%);
  }
 
 .wrapper-title {
