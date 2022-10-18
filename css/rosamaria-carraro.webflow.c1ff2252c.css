@@ -2497,6 +2497,27 @@ figcaption {
    border: 1px none #000;
 }
 
+.console-container {
+   font-family:Brotedyoungplant;
+   font-size:2em;
+   text-align:left;
+   height:2em;
+   width:40vh;
+   display:block;
+   position:relative;
+   color:white;
+   top:0;
+   bottom:0;
+   left:0;
+   right:0;
+ }
+ .console-underscore {
+   display:inline-block;
+   position:relative;
+   top:-0.14em;
+   left:10px;
+ }
+
 .link {
    position: relative;
    display: -webkit-box;
