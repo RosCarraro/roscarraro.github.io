@@ -2517,6 +2517,9 @@ figcaption {
    top:-0.14em;
    left:10px;
  }
+ .hidden {
+   opacity:0;
+ }
 
 .link {
    position: relative;

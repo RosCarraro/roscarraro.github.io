@@ -5574,15 +5574,15 @@
 });
 
 
-// function([string1, string2],target id,[color1,color2])    
-consoleText(['Interactive project.', 'Interactive project.'], 'interactivetext',['green','darkgray']);
-consoleText(['Interactive project.', 'Interactive project.'], 'interactivetext2',['green','darkgray']);
-consoleText(['Video available.', 'Video available.'], 'videotext',['green','darkgray']);
+// function([string1, string2],target id, underscore id,[color1,color2])    
+consoleText(['Interactive project.', 'Interactive project.'], 'interactivetext', 'console', ['green','darkgray']);
+consoleText(['Interactive project.', 'Interactive project.'], 'interactivetext2', 'console2', ['green','darkgray']);
+consoleText(['Video available.', 'Video available.'], 'videotext', 'videoconsole', ['green','darkgray']);
 
-function consoleText(words, id, colors) {
+function consoleText(words, id, underscid, colors) {
   if (colors === undefined) colors = ['#fff'];
   var visible = true;
-  var con = document.getElementById('console');
+  var con = document.getElementById(underscid);
   var letterCount = 1;
   var x = 1;
   var waiting = false;
