@@ -5627,3 +5627,22 @@ function consoleText(words, id, underscid, colors) {
     }
   }, 400)
 }
+
+function scrollFunction1(id) {
+  let e = document.getElementById(id);
+  e.scrollIntoView({
+    block: 'start',
+    behavior: 'smooth',
+    inline: 'start'
+  });
+}
+function scrollFunction2(id) {
+  let e = document.getElementById(id);
+  // This ends the block to the window 
+  // bottom and also aligns the view to the center 
+  e.scrollIntoView({
+    block: 'end',
+    behavior: 'smooth',
+    inline: 'center'
+  });
+}
