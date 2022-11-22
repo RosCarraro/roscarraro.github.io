@@ -99,9 +99,19 @@
                   which common ingredients they have, and the characterizing actives.</p>
                <p>Access the <a href="https://github.com/RosCarraro/Hair_products" target="_blank">Github repository
                      here</a>.</p>
-               <div><iframe src="https://hair-products.onrender.com/NLP_hair_products" frameborder="0"
-                     style="overflow:hidden;height:70vh;width: 80%;position:relative;margin: 0 auto;display:block; "
-                     height="70vh"></iframe></div>
+               
+               <div>
+                  <style>
+                     #loadImg { position: relative; z-index: 999;}
+                     #loadImg div { display: table-cell; width: 80vh; height: 70vh; background: #fff; text-align: center; vertical-align: middle; }
+                  </style>
+                  <div id="loadImg">
+                     <div><img src="/images/loader.gif" /></div>
+                  </div>
+                  <iframe src="https://hair-products.onrender.com/NLP_hair_products" frameborder="0"
+                     style="overflow:hidden;height:70vh;width: 80%;position:relative;margin: 0 auto;display:block; " height="70vh"
+                     onload="document.getElementById('loadImg').style.display='none';"></iframe>
+               </div>
             </div>
          </div>
       </div>

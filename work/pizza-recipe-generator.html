@@ -78,9 +78,19 @@
                   make it enticing and accessible to anybody.</p>
                <p>You can try the app yourself here below (give it a few seconds to load), or you can visit its <a
                      href="https://github.com/RosCarraro/Pizza_recipe" target="_blank">GitHub repository</a>.</p>
-               <div><iframe src="https://pizza-recipe.onrender.com/Pizza_recipe" frameborder="0"
-                     style="overflow:hidden;height:70vh;width: 90%;position:relative;margin: 0 auto;display:block;"
-                     height="70vh"></iframe></div>
+                     
+               <div>
+                  <style>
+                     #loadImg { position: relative; z-index: 999;}
+                     #loadImg div { display: table-cell; width: 90vh; height: 70vh; background: #fff; text-align: center; vertical-align: middle; }
+                  </style>
+                  <div id="loadImg">
+                     <div><img src="/images/loader.gif" /></div>
+                  </div>
+                  <iframe src="https://pizza-recipe.onrender.com/Pizza_recipe" frameborder="0"
+                     style="overflow:hidden;height:70vh;width: 90%;position:relative;margin: 0 auto;display:block; " height="70vh"
+                     onload="document.getElementById('loadImg').style.display='none';"></iframe>
+               </div>
             </div>
          </div>
       </div>
